@@ -158,8 +158,8 @@ h3 { font-size: 16px; font-weight: 650; margin-bottom: 8px; line-height: 1.6; }
     .mode-card { padding: 18px; }
     .note { padding: 13px 15px; }
     .contact-panel { padding: 20px; }
-    .footer-inner { display: block; }
-    .footer-links { margin-top: 12px; gap: 18px; }
+    .footer-inner { display: block; text-align: center; }
+    .footer-links { margin-top: 12px; gap: 18px; justify-content: center; }
 }
 @media (max-width: 370px) {
     .container { width: calc(100% - 30px); }
