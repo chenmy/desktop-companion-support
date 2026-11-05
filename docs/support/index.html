@@ -1,91 +1,97 @@
 <!doctype html>
-<!-- 帮助与支持：仅介绍现有功能，邮箱链接由访客主动打开，不加载外部脚本。 -->
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="桌面伙伴帮助中心：了解陪伴与安静模式、光标互动、Claude Code 提醒、常见问题及联系开发者的方式。">
-    <meta name="theme-color" content="#faf7f2">
+    <meta name="description" content="桌面伙伴帮助中心：快速上手、陪伴与安静模式、常见问题、可选的 Claude Code 提醒及联系开发者。">
+    <meta name="theme-color" content="#fcfaf7">
     <meta name="referrer" content="no-referrer">
     <title>帮助与支持 · 桌面伙伴</title>
     <link rel="canonical" href="https://chenmy.github.io/desktop-companion-support/support/">
     <link rel="icon" type="image/png" href="../assets/favicon.png">
     <link rel="stylesheet" href="../assets/site.css">
+    <script src="../assets/contact.js" defer></script>
 </head>
-<body>
+<body class="support-page">
     <a class="skip-link" href="#main">跳到主要内容</a>
     <header class="site-header">
         <div class="container header-inner">
-            <a class="brand" href="./" aria-label="桌面伙伴帮助首页">
-                <img src="../assets/app-icon.png" alt="" width="46" height="46">
-                <div><strong>桌面伙伴</strong><span>DESKTOP COMPANION</span></div>
+            <a class="brand" href="../support/" aria-label="桌面伙伴帮助首页">
+                <img src="../assets/app-icon.png" alt="" width="40" height="40">
+                <span>桌面伙伴</span>
             </a>
             <nav class="primary-nav" aria-label="网站导航">
-                <a href="./" aria-current="page">帮助与支持</a>
-                <a href="../privacy/">隐私政策</a>
+                <a href="../support/" aria-current="page">帮助</a>
+                <a href="../privacy/">隐私</a>
             </nav>
         </div>
     </header>
-    <main id="main" class="container" tabindex="-1">
-        <div class="hero">
-            <div>
-                <p class="eyebrow">ASTER / SUPPORT</p>
-                <h1>帮助与支持</h1>
-                <p class="hero-copy">认识你的桌面伙伴，找到合适的陪伴方式。<br>从日常使用到遇到问题，这里有一些简单的指引。</p>
-                <p class="meta">macOS 14 及以上 · 应用正在准备上架</p>
-            </div>
-            <aside class="hero-note" aria-label="桌面伙伴简介">
-                <div class="note-label">一只 Aster，一点生趣。</div>
-                <strong>忙里偷闲，<br>有我作伴。</strong>
-                <p>陪伴的节奏，由你决定。</p>
-                <img class="pet" src="../assets/app-icon.png" alt="Aster 从窗沿探出头的应用图标" width="105" height="105">
-            </aside>
-        </div>
-        <nav class="quick-links" aria-label="快速入口">
-            <a class="quick-link" href="#start"><div><span>开始使用</span><small>找到菜单与两种模式</small></div><span class="arrow" aria-hidden="true">↗</span></a>
-            <a class="quick-link" href="#reminders"><div><span>连接提醒</span><small>可选的 Claude Code 功能</small></div><span class="arrow" aria-hidden="true">↗</span></a>
-            <a class="quick-link" href="#contact"><div><span>联系开发者</span><small>反馈问题与分享建议</small></div><span class="arrow" aria-hidden="true">↗</span></a>
-        </nav>
-        <div class="reading-layout">
-            <nav class="toc" aria-label="本页目录">
-                <p class="toc-label">在这一页</p>
-                <a href="#start">01 &nbsp; 开始使用</a>
-                <a href="#interaction">02 &nbsp; 和 Aster 相处</a>
-                <a href="#reminders">03 &nbsp; Claude Code 提醒</a>
-                <a href="#questions">04 &nbsp; 常见问题</a>
-                <a href="#contact">05 &nbsp; 联系与反馈</a>
-                <a class="toc-contact" href="mailto:419169121@qq.com">419169121@qq.com ↗</a>
-            </nav>
-            <div class="document">
-                <section id="start" class="document-section" aria-labelledby="start-title">
-                    <div class="section-heading"><span class="section-number" aria-hidden="true">01</span><h2 id="start-title">开始使用</h2></div>
-                    <p>打开桌面伙伴后，点击屏幕顶部菜单栏中的蜘蛛图标，就能选择模式、显示或隐藏 Aster，以及打开设置。应用常驻菜单栏，程序坞中不显示图标。</p>
-                    <div class="mode-grid">
-                        <div class="mode-card">
-                            <div class="mode-title"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 20S3 14.2 3 8.8C3 3.8 9.4 2.7 12 7c2.6-4.3 9-3.2 9 1.8C21 14.2 12 20 12 20Z"/></svg><h3>陪伴模式</h3></div>
-                            <p>Aster 会自在活动、关注光标，也会回应轻触。适合想让桌面热闹一点的时候。</p>
-                        </div>
-                        <div class="mode-card">
-                            <div class="mode-title"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M18 12V9a6 6 0 0 0-9.8-4.6M6 9v3l-2 5h13M10 21h4M3 3l18 18"/></svg><h3>安静模式</h3></div>
-                            <p>主要在屏幕底部停驻，光标靠近时主动让开。暂停提醒展示，点击可穿过桌宠进行原本的操作。</p>
-                        </div>
-                    </div>
-                    <p>两种模式互斥，应用会记住已经保存的选择。想暂时收起伙伴，选择菜单中的<strong>「隐藏」</strong>；需要时再选择<strong>「显示」</strong>。结束本次陪伴，请选择<strong>「退出」</strong>。</p>
-                </section>
-                <section id="interaction" class="document-section" aria-labelledby="interaction-title">
-                    <div class="section-heading"><span class="section-number" aria-hidden="true">02</span><h2 id="interaction-title">和 Aster 相处</h2></div>
-                    <ul>
+    <main id="main" tabindex="-1">
+        <div class="container">
+            <section class="support-intro" aria-labelledby="page-title">
+                <div>
+                    <p class="eyebrow">使用指南</p>
+                    <h1 id="page-title">帮助与支持</h1>
+                    <p class="intro-copy">从初次使用到日常相伴，<br class="desktop-break">找到你需要的答案。</p>
+                    <p class="intro-meta">macOS 14 及以上<span aria-hidden="true"> · </span>应用正在准备上架</p>
+                </div>
+                <a class="button" href="#contact">联系开发者 <span aria-hidden="true">↗</span></a>
+            </section>
+
+            <section id="start" class="start-section" aria-labelledby="start-title">
+                <div class="section-top"><h2 id="start-title">开始使用</h2><p>从屏幕顶部的蜘蛛图标开始。</p></div>
+                <ol class="start-steps">
+                    <li>
+                        <span class="step-number" aria-hidden="true">01</span>
+                        <div><h3>找到菜单</h3><p>打开应用，点击 Mac 顶部菜单栏的蜘蛛图标。设置与关于都在这里，程序坞中不显示应用图标。</p></div>
+                    </li>
+                    <li>
+                        <span class="step-number" aria-hidden="true">02</span>
+                        <div><h3>选择陪伴方式</h3><p><strong>陪伴模式</strong>下自在互动；需要专注时，切换<strong>安静模式</strong>，让它在屏幕底部安静停驻、避让光标。</p></div>
+                    </li>
+                    <li>
+                        <span class="step-number" aria-hidden="true">03</span>
+                        <div><h3>随时收起，再见面</h3><p>选择<strong>「隐藏」</strong>暂时收起，选择<strong>「显示」</strong>再次唤回。结束本次陪伴，选择<strong>「退出」</strong>。</p></div>
+                    </li>
+                </ol>
+            </section>
+
+            <section id="questions" class="faq-section" aria-labelledby="questions-title">
+                <div class="section-aside"><p class="eyebrow">日常使用</p><h2 id="questions-title">常见问题</h2><p>展开问题，查看使用方法<br class="desktop-break">或处理建议。</p></div>
+                <div class="faq-list">
+                    <details><summary>陪伴与安静模式，有什么区别？</summary><div class="faq-answer">
+                        <dl class="mode-comparison">
+                            <div><dt>陪伴模式</dt><dd>Aster 会自在活动、关注光标，也会回应轻触。适合想让桌面热闹一点的时候。</dd></div>
+                            <div><dt>安静模式</dt><dd>主要在屏幕底部停驻，光标靠近时主动让开；不会主动追逐光标，也不展示提醒。点击可穿过桌宠进行原本的操作。</dd></div>
+                        </dl><p>两种模式互斥，应用会记住已经保存的选择。显示与隐藏不会改变已保存的模式。</p>
+                    </div></details>
+                    <details id="interaction"><summary>可以怎样和 Aster 互动？</summary><div class="faq-answer"><ul>
                         <li><strong>轻轻点一下。</strong>陪伴模式下，平静的 Aster 会用全身的动作回应你。短时间连续点击到第四次，它可能受惊跑开。</li>
                         <li><strong>给它一点距离。</strong>快速靠近的光标会使它警觉。把光标移远、留出安静的空间，它会逐渐恢复平静。</li>
                         <li><strong>让它自己探索。</strong>它会走动、转身、观察，也可能悄悄靠近光标，再试着扑过去。</li>
                         <li><strong>在多个屏幕间相伴。</strong>当前是一只 Aster 在可用屏幕间活动；它不会在每个屏幕各复制一只。</li>
                     </ul>
-                    <div class="note">需要专注时，随时切换「安静模式」。它仍会避让光标，但不会主动追逐你。</div>
-                </section>
-                <section id="reminders" class="document-section" aria-labelledby="reminders-title">
-                    <div class="section-heading"><span class="section-number" aria-hidden="true">03</span><h2 id="reminders-title">Claude Code 提醒</h2></div>
-                    <p>如果你使用 Claude Code，可以让 Aster 在任务需要批准、等待回答或完成时提醒你。这是可选功能；日常桌面陪伴可以独立使用。</p>
-                    <ol>
+                    <div class="note">需要专注时，随时切换「安静模式」。它仍会避让光标，但不会主动追逐你。</div></div></details>
+                    <details><summary>打开后找不到窗口或程序坞图标？</summary><div class="faq-answer"><p>这是菜单栏应用。请查看屏幕顶部的蜘蛛图标；点击后可打开设置或关于。若菜单中显示「显示」，点击它即可重新显示 Aster。</p></div></details>
+                        <details><summary>为什么点击 Aster 没有反应？</summary><div class="faq-answer"><p>请先确认处于陪伴模式。安静模式会让点击穿透；受惊警戒时，Aster 也不会回应点击。把光标移远，给它一段恢复平静的时间，再轻轻靠近。</p></div></details>
+                        <details><summary>它有时挡住了正在看的内容，怎么办？</summary><div class="faq-answer"><p>选择「安静模式」，Aster 会主要停驻在屏幕底部并避让光标。需要完全腾出桌面时，选择「隐藏」。显示与隐藏不会改变已保存的模式。</p></div></details>
+                        <details><summary>连接后没有收到 Claude Code 提醒？</summary><div class="faq-answer"><p>检查「接收提醒」开关、陪伴模式以及连接状态，并新开 Claude Code 会话。若提示连接需要更新，请执行「更新连接」；若提示接收已暂停，尝试「重新连接提醒接收」。问题仍在时，请将提示文字和应用版本发给我们。</p></div></details>
+                        <details><summary>回到终端后，为什么它还在等待？</summary><div class="faq-answer"><p>回到终端和实际提交回答是两件事。提醒会在对应的批准、回答或结束事件到达后更新。当前对返回 Ghostty 的识别可收起气泡；其它终端的显示行为可能不同。</p></div></details>
+                        <details><summary>拔掉显示器、睡眠唤醒后显示异常？</summary><div class="faq-answer"><p>先通过顶部菜单隐藏再显示；仍不正常时，退出后重新打开。反馈时请说明屏幕数量、排列、缩放设置，以及问题发生在拔屏、唤醒还是切换全屏之后。</p></div></details>
+                        <details><summary>怎样减少运行时的打扰与绘制开销？</summary><div class="faq-answer"><p>安静模式可减少自主活动；「隐藏」会暂停宠物绘制。如果持续出现明显发热、卡顿或占用异常，请附上 Mac 型号、系统版本及当时的模式联系我们。</p></div></details>
+                        <details><summary>如何移除提醒连接和本地数据？</summary><div class="faq-answer"><p>先在「设置 → 连接详情」中选择「移除连接」，再退出应用。移除连接会撤销应用保存的目录授权，但不会删除历史提醒、配置备份或其它 Claude Code 设置。当前没有一键清除全部本地数据的入口，如需清理，请联系开发者获取与你所用版本对应的说明。</p></div></details>
+                </div>
+            </section>
+
+            <section id="reminders" class="integration-section" aria-labelledby="reminders-title">
+                <div class="integration-header">
+                    <span class="integration-icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m5 7 5 5-5 5M13 17h6"/></svg></span>
+                    <div><p class="eyebrow">可选功能</p><h2 id="reminders-title">Claude Code 提醒</h2></div>
+                </div>
+                <p class="integration-copy">让 Aster 在任务需要批准、等待回答或完成时提醒你。<br class="desktop-break">由你选择连接，日常桌面陪伴可独立使用。</p>
+                <details class="connection-guide">
+                    <summary>连接与使用说明</summary>
+                    <div class="connection-content prose"><ol>
                         <li>点击顶部蜘蛛图标，打开<strong>「设置」</strong>，选择<strong>「连接 Claude Code」</strong>。</li>
                         <li>在系统窗口中选择个人文件夹里的 <code>.claude</code> 文件夹。应用会在修改提醒设置前备份已有配置。</li>
                         <li>确认<strong>「接收提醒」</strong>已开启，并使用陪伴模式。</li>
@@ -94,40 +100,38 @@
                     <p>找不到文件夹时，可在系统选择窗口中按 <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>G</kbd>，输入 <code>~/.claude</code> 定位。请先确认已经安装、使用过 Claude Code。</p>
                     <div class="note"><p><strong>安静模式下不会展示提醒。</strong>切回陪伴或重新开启接收后，只提醒之后的新消息。Aster 的提醒不会替你批准、回答或执行 Claude Code 的操作。</p></div>
                     <p>应用移动到新位置后，可回到设置中<strong>「更新连接」</strong>。停止使用提醒或删除桌面伙伴前，请先展开<strong>「连接详情」</strong>，选择<strong>「移除连接」</strong>。</p>
-                    <a class="text-link" href="../privacy/#reminders">查看提醒功能的数据说明 <span aria-hidden="true">↗</span></a>
-                </section>
-                <section id="questions" class="document-section" aria-labelledby="questions-title">
-                    <div class="section-heading"><span class="section-number" aria-hidden="true">04</span><h2 id="questions-title">常见问题</h2></div>
-                    <div class="faq-list">
-                        <details><summary>打开后找不到窗口或程序坞图标？</summary><div class="faq-answer"><p>这是菜单栏应用。请查看屏幕顶部的蜘蛛图标；点击后可打开设置或关于。若菜单中显示「显示」，点击它即可重新显示 Aster。</p></div></details>
-                        <details><summary>为什么点击 Aster 没有反应？</summary><div class="faq-answer"><p>请先确认处于陪伴模式。安静模式会让点击穿透；受惊警戒时，Aster 也不会回应点击。把光标移远，给它一段恢复平静的时间，再轻轻靠近。</p></div></details>
-                        <details><summary>它有时挡住了正在看的内容，怎么办？</summary><div class="faq-answer"><p>选择「安静模式」，Aster 会主要停驻在屏幕底部并避让光标。需要完全腾出桌面时，选择「隐藏」。显示与隐藏不会改变已保存的模式。</p></div></details>
-                        <details><summary>连接后没有收到 Claude Code 提醒？</summary><div class="faq-answer"><p>检查「接收提醒」开关、陪伴模式以及连接状态，并新开 Claude Code 会话。若提示连接需要更新，请执行「更新连接」；若提示接收已暂停，尝试「重新连接提醒接收」。问题仍在时，请将提示文字和应用版本发给我们。</p></div></details>
-                        <details><summary>回到终端后，为什么它还在等待？</summary><div class="faq-answer"><p>回到终端和实际提交回答是两件事。提醒会在对应的批准、回答或结束事件到达后更新。当前对返回 Ghostty 的识别可收起气泡；其它终端的显示行为可能不同。</p></div></details>
-                        <details><summary>拔掉显示器、睡眠唤醒后显示异常？</summary><div class="faq-answer"><p>先通过顶部菜单隐藏再显示；仍不正常时，退出后重新打开。反馈时请说明屏幕数量、排列、缩放设置，以及问题发生在拔屏、唤醒还是切换全屏之后。</p></div></details>
-                        <details><summary>怎样减少运行时的打扰与绘制开销？</summary><div class="faq-answer"><p>安静模式可减少自主活动；「隐藏」会暂停宠物绘制。如果持续出现明显发热、卡顿或占用异常，请附上 Mac 型号、系统版本及当时的模式联系我们。</p></div></details>
-                        <details><summary>如何移除提醒连接和本地数据？</summary><div class="faq-answer"><p>先在「设置 → 连接详情」中选择「移除连接」，再退出应用。移除连接会撤销应用保存的目录授权，但不会删除历史提醒、配置备份或其它 Claude Code 设置。当前没有一键清除全部本地数据的入口，如需清理，请联系开发者获取与你所用版本对应的说明。</p></div></details>
+                    <a class="text-link" href="../privacy/#reminders">查看提醒功能的数据说明 <span aria-hidden="true">↗</span></a></div>
+                </details>
+            </section>
+
+            <section id="contact" class="support-contact" aria-labelledby="contact-title">
+                <div class="contact-main">
+                    <p class="eyebrow">保持联系</p><h2 id="contact-title">联系开发者</h2>
+                    <p>遇到问题，或有新的想法，欢迎来信。</p>
+                    <div class="email-contact" data-email-contact>
+                        <a class="contact-email" data-email-link href="mailto:419169121@qq.com?subject=%E6%A1%8C%E9%9D%A2%E4%BC%99%E4%BC%B4%20%E4%BD%BF%E7%94%A8%E5%8F%8D%E9%A6%88"><span data-email-address>419169121@qq.com</span> <span class="email-arrow" aria-hidden="true">↗</span></a>
+                        <div class="email-actions"><button class="copy-email" type="button" data-copy-email hidden><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M15 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h3"/></svg><span>复制邮箱</span></button></div>
+                        <p class="email-status" data-email-status role="status" aria-live="polite" aria-atomic="true">点击邮箱打开邮件应用，也可选中邮箱地址手动复制。</p>
                     </div>
-                </section>
-                <section id="contact" class="document-section" aria-labelledby="contact-title">
-                    <div class="section-heading"><span class="section-number" aria-hidden="true">05</span><h2 id="contact-title">联系与反馈</h2></div>
-                    <p>遇到问题，或者有想让 Aster 学会的小动作，都欢迎来信。说明具体发生了什么，会帮助我们更快理解。</p>
-                    <div class="contact-panel">
-                        <p class="contact-caption">开发者 · Chen Maoyong</p>
-                        <a class="contact-email" href="mailto:419169121@qq.com?subject=%E6%A1%8C%E9%9D%A2%E4%BC%99%E4%BC%B4%20%E4%BD%BF%E7%94%A8%E5%8F%8D%E9%A6%88">419169121@qq.com <span aria-hidden="true">↗</span></a>
-                        <p class="contact-footnote">点击邮箱会打开你的邮件应用；也可以复制地址自行发送。</p>
-                    </div>
-                    <p style="margin-top: 22px">反馈问题时，建议提供：</p>
-                    <ul>
-                        <li>「关于」中的应用版本，以及 macOS 版本和 Mac 型号。</li>
-                        <li>发生问题时的模式、操作步骤，以及屏幕数量和排列。</li>
-                        <li>如有必要，附上经过遮挡处理的截图或短视频。</li>
-                    </ul>
-                    <p class="meta">请勿发送密码、访问令牌、完整 Claude Code 对话或未处理的私人文件。来信处理方式见<a href="../privacy/#contact">隐私政策</a>。</p>
-                </section>
-            </div>
+                    <p class="contact-owner">Chen Maoyong · 桌面伙伴开发者</p>
+                </div>
+                <div class="feedback-guide">
+                    <h3>来信时，附上这些信息</h3>
+                    <ul><li>应用版本、macOS 版本及 Mac 型号。</li><li>当时的模式、操作步骤、屏幕数量与排列。</li><li>如有必要，附上遮挡私人内容后的截图。</li></ul>
+                    <p>请勿发送密码、访问令牌、完整 Claude Code 对话或未处理的私人文件。来信处理方式见<a href="../privacy/#contact">隐私政策</a>。</p>
+                </div>
+            </section>
         </div>
     </main>
-    <footer class="site-footer"><div class="container footer-inner"><div><p>© 2026 Chen Maoyong. 保留所有权利。</p><p>桌面伙伴 · 更新于 2026 年 11 月 5 日</p></div><nav class="footer-links" aria-label="页脚导航"><a href="./">帮助与支持</a><a href="../privacy/">隐私政策</a><a href="#contact">联系开发者</a></nav></div></footer>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div><p>© 2026 Chen Maoyong. 保留所有权利。</p><p class="footer-note">桌面伙伴 · 更新于 2026 年 11 月 5 日</p></div>
+            <nav class="footer-links" aria-label="页脚导航">
+                <a href="../support/">帮助与支持</a>
+                <a href="../privacy/">隐私政策</a>
+                <a href="#contact">联系开发者</a>
+            </nav>
+        </div>
+    </footer>
 </body>
 </html>
