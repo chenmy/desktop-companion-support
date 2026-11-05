@@ -1,0 +1,9 @@
+# 本地预览、系统文件及临时校验产物不进入公开仓库。
+.DS_Store
+__pycache__/
+*.pyc
+node_modules/
+.env
+.env.*
+test-results/
+playwright-report/
