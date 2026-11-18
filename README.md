@@ -44,9 +44,9 @@ python3 -B -m http.server 4179 --bind 127.0.0.1 --directory docs
 
 ## 资产与权利
 
-应用图标由作者主导设计，使用 OpenAI 图像工具制作完成；本站使用已接入应用的 PNG 导出文件，不重新生成或改写图片。页面布局、样式与简单线条图形为本项目制作。
+应用图标（v4）由作者主导设计，以自有 3D 模型 Aster 4.0 的渲染为唯一图片输入，使用 OpenAI 图像工具制作；本站直接使用应用工程导出的同尺寸 PNG（`App/Assets.xcassets/AppIcon.appiconset/` 的 `icon-512.png`、`icon-64.png`），不重新生成或改写图片。应用更换图标时同步替换这两个文件并更新下方哈希。页面布局、样式与简单线条图形为本项目制作。
 
-- `docs/assets/app-icon.png`：512 × 512，SHA-256 `b1909ba5eabc3325ba92e0d7eca10b4ebbc7e459dcfc7e005e67d752cf4d5412`
-- `docs/assets/favicon.png`：64 × 64，SHA-256 `807a050e7a0f5879cf52654d3d00f53fce62607c3ee80ebe41f5b66bb023ae27`
+- `docs/assets/app-icon.png`：512 × 512，SHA-256 `e0ee7d0f5c71ebb1e4141cff8b533a81c48ba60717b176f1a8d3d062d4654bbb`
+- `docs/assets/favicon.png`：64 × 64，SHA-256 `c6793c4eded8a327f7f5b8fe53ec314143733ded516cd200576b2d7983449b78`
 
 © 2026 Chen Maoyong. 保留所有权利。公开浏览不构成对图标、品牌或其它内容的再分发授权。
