@@ -58,7 +58,7 @@
                 <section id="scope" class="document-section" aria-labelledby="scope-title">
                     <div class="section-heading"><span class="section-number" aria-hidden="true">01</span><h2 id="scope-title">适用范围</h2></div>
                     <p>本政策适用于由个人开发者 <strong>Chen Maoyong</strong> 提供的 macOS 应用<strong>「桌面住客」（DesktopCompanion）</strong>，以及本技术支持与隐私政策网站。</p>
-                    <p>当前应用提供本机桌宠互动和可选的 Claude Code 提醒；宠物通过 App Store 内购获得 6 个月（半年）使用期。日常陪伴无需注册账号；应用没有联网权限，不含广告、分析或其它第三方 SDK，不向开发者或任何第三方上传光标轨迹、提醒内容或使用记录。</p>
+                    <p>当前应用提供本机桌宠互动和可选的 Claude Code 提醒；首发蛛宝通过 App Store 内购按 6 个月（半年）自动续订。日常陪伴无需注册账号；应用没有联网权限，不含广告、分析或其它第三方 SDK，不向开发者或任何第三方上传光标轨迹、提醒内容或使用记录。</p>
                     <p>当你访问本网站或主动发邮件联系我们时，会涉及网站托管或邮件服务，具体处理方式见下文。</p>
                 </section>
                 <section id="local-data" class="document-section" aria-labelledby="local-data-title">
@@ -85,10 +85,10 @@
                 </section>
                 <section id="purchases" class="document-section" aria-labelledby="purchases-title">
                     <div class="section-heading"><span class="section-number" aria-hidden="true">04</span><h2 id="purchases-title">购买与使用期</h2></div>
-                    <p>宠物的使用期通过 App Store 内购获得。购买、付款、退款均由 Apple 在系统付款窗口和 Apple 账户中处理；应用和开发者都收不到你的 Apple 账户、付款方式或账单信息。</p>
+                    <p>宠物的使用期通过 App Store 内购获得。购买、续订、取消、付款及退款均由 Apple 在系统付款窗口和 Apple 账户中处理；应用和开发者都收不到你的 Apple 账户、付款方式或账单信息。</p>
                     <ul>
-                        <li><strong>本机核验：</strong>应用通过 macOS 的 App Store 系统服务，读取当前 Apple 账户在本应用中的购买记录（购买的宠物、购买时间，以及是否已退款或撤销），在本机核对 Apple 的签名并计算使用期截止日期。这些记录由系统提供，应用不另存订单副本。</li>
-                        <li><strong>与 Apple 的通信：</strong>获取价格、购买、接收退款等交易更新，以及你点击「恢复购买」时，由 macOS 的 App Store 系统服务与 Apple 通信；恢复购买时可能请你登录 Apple 账户。应用本身仍没有联网权限，也不经开发者服务器中转。</li>
+                        <li><strong>本机核验：</strong>应用通过 macOS 的 App Store 系统服务，读取当前 Apple 账户在本应用中的购买与订阅记录（商品标识、交易及原始交易标识、购买与到期时间、是否退款或撤销），以及续订意愿、扣款重试和账单宽限截止时间，在本机核对 Apple 的签名并按已验证的截止时间判断使用资格。这些记录由系统提供，应用不另存订单副本。</li>
+                        <li><strong>与 Apple 的通信：</strong>获取价格、购买、接收续订与退款等交易更新、查询订阅状态，以及你点击「恢复购买」时，由 macOS 的 App Store 系统服务与 Apple 通信；恢复购买时可能请你登录 Apple 账户。应用本身仍没有联网权限，也不经开发者服务器中转。</li>
                         <li><strong>本机保存：</strong>应用在本机保存你选择的宠物、是否显示在桌面、开始显示提醒的时间，以及最近一次看到的系统时间。最后一项用于发现系统时间被调回、避免使用期被意外延长；这些设置不能单独开通使用期。</li>
                         <li><strong>开发者获得的信息：</strong>Apple 按其规则向开发者提供销量、地区和收入等汇总报告，其中不包含可以直接识别你的信息。</li>
                     </ul>
@@ -102,7 +102,7 @@
                 </section>
                 <section id="choices" class="document-section" aria-labelledby="choices-title">
                     <div class="section-heading"><span class="section-number" aria-hidden="true">06</span><h2 id="choices-title">保存期限、撤回同意与删除</h2></div>
-                    <p>本地偏好（包括宠物选择与显示设置）会保留供应用继续使用，直到你删除为止。购买记录保存在你的 Apple 账户中，删除应用或本地数据不会影响已购买的使用期，重新安装后可通过「恢复购买」找回剩余的使用期。提醒相关记录会自动清理：处理完的提醒消息随即删除；用于避免重复提醒的记录，在对应的 Claude Code 会话超过一天没有新动态、且没有等待你批准或回答的提醒后清除，未读的完成通知一并清除；会话轮次计数在 30 天未更新后删除；无法识别或已过期的提醒消息只保留最近 100 份，用于排查问题。配置备份保留在你授权的文件夹中；可选诊断文件按所在目录和系统清理规则保留。开发者没有你本地数据的任何副本。</p>
+                    <p>本地偏好（包括宠物选择与显示设置）会保留供应用继续使用，直到你删除为止。购买记录保存在你的 Apple 账户中，删除应用或本地数据不会取消自动续订，也不会重置已购买的使用期；请通过应用中的「管理订阅」或 Apple 账户设置取消续订。重新安装后可通过「恢复购买」找回剩余使用期。提醒相关记录会自动清理：处理完的提醒消息随即删除；用于避免重复提醒的记录，在对应的 Claude Code 会话超过一天没有新动态、且没有等待你批准或回答的提醒后清除，未读的完成通知一并清除；会话轮次计数在 30 天未更新后删除；无法识别或已过期的提醒消息只保留最近 100 份，用于排查问题。配置备份保留在你授权的文件夹中；可选诊断文件按所在目录和系统清理规则保留。开发者没有你本地数据的任何副本。</p>
                     <h3>撤回同意</h3>
                     <ul>
                         <li><strong>暂停展示：</strong>切换安静模式或关闭「接收提醒」会停止相关提醒展示。已配置的本地助手仍可能写入事件，暂停展示不等于删除数据或撤销连接。</li>
